@@ -1,3 +1,5 @@
+<img src="hiveguard-header.png">
+
 # hiveguard
 
 HiveGuard: A distributed system for monitoring the security of Zigbee networks
