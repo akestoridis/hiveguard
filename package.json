@@ -1,0 +1,38 @@
+{
+  "name": "hiveguard",
+  "version": "0.0.0",
+  "description": "HiveGuard: A distributed system for monitoring the security of Zigbee networks",
+  "bin": {
+    "hiveguard": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "lint": "npx eslint . --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akestoridis/hiveguard.git"
+  },
+  "keywords": [
+    "Zigbee",
+    "network",
+    "security",
+    "monitoring"
+  ],
+  "author": "Dimitrios-Georgios Akestoridis",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/akestoridis/hiveguard/issues"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "hiveguard-backend": "file:../hiveguard-backend",
+    "hiveguard-frontend": "file:../hiveguard-frontend",
+    "prompts": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
