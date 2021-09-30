@@ -1,4 +1,4 @@
-<img src="hiveguard-header.png">
+<img src="https://github.com/akestoridis/hiveguard/raw/a9bff35964406c9ef4ad5c21f4ea7263747ae3ce/hiveguard-header.png">
 
 # hiveguard
 
@@ -36,7 +36,7 @@ $ npm run start config.prod.json
 
 ## Architecture
 
-<img src="hiveguard-architecture.png">
+<img src="https://github.com/akestoridis/hiveguard/raw/3599091ad49b3493d4939ab9826b837807c610ea/hiveguard-architecture.png">
 
 
 ## Publication
