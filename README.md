@@ -34,6 +34,11 @@ $ npm run start config.prod.json
 ```
 
 
+## Architecture
+
+<img src="hiveguard-architecture.png">
+
+
 ## Publication
 
 HiveGuard was used in the following publication:
