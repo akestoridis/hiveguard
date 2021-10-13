@@ -28,11 +28,11 @@
     "dotenv": "^10.0.0",
     "hiveguard-backend": "file:../hiveguard-backend",
     "hiveguard-frontend": "file:../hiveguard-frontend",
-    "prompts": "^2.4.1"
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2"
+    "eslint-plugin-import": "^2.25.2"
   }
 }
