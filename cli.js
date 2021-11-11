@@ -20,7 +20,7 @@ require('dotenv').config();
 
 const fs = require('fs');
 const path = require('path');
-const { spawn } = require('child_process');
+const { spawn, spawnSync } = require('child_process');
 const prompts = require('prompts');
 
 (async () => {
@@ -78,6 +78,27 @@ const prompts = require('prompts');
           message: 'What is the database password?',
         });
         process.env.DB_PASS = dbPassResponse.dbPass;
+      }
+
+      const dbInitArgs = [
+        path.join(
+          __dirname,
+          'node_modules',
+          'hiveguard-backend',
+          'db.init.js',
+        ),
+      ];
+
+      if (configFile) {
+        dbInitArgs.push(configFile);
+      }
+
+      const cp = spawnSync('node', dbInitArgs);
+      if (cp.status === 0) {
+        console.log('Initialized the database successfully');
+      } else {
+        console.error(cp.stderr.toString());
+        throw new Error('Failed to initialize the database');
       }
     }
 
