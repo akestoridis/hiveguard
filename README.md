@@ -27,7 +27,18 @@ $ npm run start config.prod.json
 
 ## Architecture
 
+HiveGuard consists of four components:
+
+1. A retention server, which is archiving compressed pcap files from a set of wireless intrusion detection system (WIDS) sensors.
+2. An aggregation server, which is mainly responsible for aggregating data and events from the registered WIDS sensors.
+3. An inspection server, which is analyzing aggregated data and events, as well as generating alerts for events that were detected either by a WIDS sensor or during its own analysis routine.
+4. A web server, which is statically serving the HiveGuard frontend application to run on the HiveGuard user's web browser.
+
+The following figure provides an overview of the system architecture.
+
 <img src="https://github.com/akestoridis/hiveguard/raw/3599091ad49b3493d4939ab9826b837807c610ea/hiveguard-architecture.png">
+
+The source code of the HiveGuard backend servers can be found in the [akestoridis/hiveguard-backend repository](https://github.com/akestoridis/hiveguard-backend), while the source code of the HiveGuard frontend application can be found in the [akestoridis/hiveguard-frontend repository](https://github.com/akestoridis/hiveguard-frontend).
 
 
 ## Publication
