@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "dotenv": "16.0.0",
-    "hiveguard-backend": "file:../hiveguard-backend",
-    "hiveguard-frontend": "file:../hiveguard-frontend",
+    "hiveguard-backend": "0.2.0",
+    "hiveguard-frontend": "0.2.0",
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "eslint": "8.10.0",
+    "eslint": "8.14.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.25.4"
+    "eslint-plugin-import": "2.26.0"
   }
 }

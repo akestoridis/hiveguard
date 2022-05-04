@@ -7,20 +7,11 @@ HiveGuard: A distributed system for monitoring the security of Zigbee networks
 
 ## Instructions
 
-Currently, you can install the HiveGuard command-line interface as follows:
+You can install the HiveGuard command-line interface from its GitHub repository as follows:
 ```console
 $ git clone https://github.com/akestoridis/hiveguard.git
-$ git clone https://github.com/akestoridis/hiveguard-backend.git
-$ git clone https://github.com/akestoridis/hiveguard-frontend.git
-$ cd hiveguard-frontend/
-$ npm install
-$ npm run build
-$ cd ../
-$ cd hiveguard-backend/
-$ npm install
-$ cd ../
 $ cd hiveguard/
-$ npm install
+$ npm install --omit=dev
 ```
 
 Then, you can select the HiveGuard backend servers that you would like to launch and define the necessary environment variables by executing the following command:
